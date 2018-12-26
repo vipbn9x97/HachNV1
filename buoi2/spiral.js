@@ -11,7 +11,8 @@ var spiral=(n)=>{
     result.push(inner);
   }
   while(rowS<=rowE && colS<=colE){
-    for(i=colS; i<=colE;i++){
+    for(i=colS; i<=colE
+      ;i++){
       result[rowS][i]=val;
       val++;
     }
