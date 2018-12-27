@@ -1,19 +1,15 @@
 function R(n){
-    var i,j;
     var x = 1;
-    var A = [];
-    var rs = [];
+    var result = [];
     for(let z = 0; z < (2*n - 1); z += 1){
-        rs[z] = [];
+        result[z] = [];
     }
-    for(i = 0; i < n; i += 1){
-        A[i] = [];
-        for(j = 0; j < n; j += 1){
-            A[i][j] = x;
+    for(i = 0; i < n; i ++){
+        for(j = 0; j < n; j ++){ 
+            result[i+j].push(x);
             x += 1;
-            rs[i+j].push(A[i][j]);
         }
     }
-    return rs;
+    return result;
 }
-console.log(R(3))
+console.log(R(5))
