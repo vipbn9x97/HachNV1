@@ -13,4 +13,4 @@ function verifyPrime(inputUser){
     }
     return true;
 }
-console.log(verifyPrime(2));
+console.log(verifyPrime(9));

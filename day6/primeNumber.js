@@ -13,4 +13,13 @@ function verifyPrime(inputUser){
     }
     return true;
 }
-console.log(verifyPrime(2));
+function primeNumber(inputUser){
+    let res = [];
+    for(let a=2;a<=inputUser;a++){
+        if(verifyPrime(a)){
+            res.push(a);
+        }
+    }
+    return res;
+}
+console.log(primeNumber(5))
