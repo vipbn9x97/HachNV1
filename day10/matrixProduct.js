@@ -1,3 +1,3 @@
-function matrixProduct(){
+function matrixProduct(matrix){
     
 }
