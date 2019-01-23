@@ -32,22 +32,22 @@ function ajax(url, cb) {
   };
   
   // YOUR CODE HERE
-  function response(obj) {
-    let { foo: foo, baz: baz, bam: {qux: qux1} } = obj;
+  function response(cbs) {
+    let { foo: foos, baz: bazz, bam:{qux:quxx} } = cbs;
     let {
-      bar: bar,
-      bam: { qux: qux2, qam: qam }
+      bar: barr,
+      bam: { qux: quxxx, qam: qamm }
     } = defaults;
-  
     let data = {
-      foo: foo,
-      bar: bar,
-      baz: baz,
+      foo: foos,
+      bar: barr,
+      baz: bazz,
       bam: {
-        qux: qux1 + qux2,
-        qam: qam
+        qux: quxx + quxxx,
+        qam: qamm
       }
     };
+
     check(data); // true
   }
   
