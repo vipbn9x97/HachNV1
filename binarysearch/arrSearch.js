@@ -19,11 +19,11 @@ function arrSearch(arr, num) {
             return mid;
         }
         else if (arr[mid] > num) {
-            end = mid - 1;
+            end = mid ;
             rs = mid;
         }
         else {
-            start = mid + 1;
+            start = mid;
             rs = mid + 1;
         }
     }
