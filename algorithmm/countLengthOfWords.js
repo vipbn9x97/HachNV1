@@ -1,4 +1,4 @@
-function LongestWord(sen) {
+function countLengthOfWords(sen) {
     let extra='&';
     let rs = sen.split('').concat(extra);
     let count = 0;
@@ -11,11 +11,7 @@ function LongestWord(sen) {
             count++;
         } else {
             result.push(count);
-            
             count = 0;
-        }
-        if (rs[j] == rs.length - 1) {
-            result.push(count);
         }
     }
     // code goes here  
@@ -23,4 +19,4 @@ function LongestWord(sen) {
 }
 
 // keep this function call here 
-console.log(LongestWord("hach%hach&hach&hach"));                            
+console.log(countLengthOfWords("hach%hach&hach&hach"));                            
